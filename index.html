@@ -2,15 +2,19 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Automação Inteligente para WhatsApp</title>
+  <title>Automação de Atendimento no WhatsApp</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Automatize seu atendimento no WhatsApp, reduza tempo de resposta e organize suas conversas com mais eficiência.">
+  <meta name="description" content="Automatize seu atendimento no WhatsApp e organize suas conversas com mais eficiência.">
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
-    body { font-family: 'Inter', sans-serif; margin: 0; color: #1f2937; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: #1f2937;
+    }
 
     header {
       background: linear-gradient(135deg, #0f172a, #1e293b);
@@ -19,7 +23,7 @@
       padding: 80px 20px;
     }
 
-    h1 { font-size: 36px; margin-bottom: 15px; }
+    h1 { font-size: 36px; }
 
     .subtitle {
       font-size: 18px;
@@ -34,9 +38,8 @@
       padding: 15px 28px;
       border-radius: 8px;
       border: none;
-      margin-top: 25px;
+      margin-top: 20px;
       cursor: pointer;
-      font-size: 16px;
     }
 
     section {
@@ -55,22 +58,58 @@
       padding: 25px;
       border: 1px solid #e5e7eb;
       border-radius: 10px;
-      background: #fff;
     }
 
     .highlight {
       background: #f9fafb;
       border-left: 4px solid #22c55e;
       padding: 20px;
-      margin-top: 20px;
     }
 
-    .cta-box {
+    /* PRICING */
+    .pricing {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .price-card {
       background: #0f172a;
       color: white;
-      text-align: center;
-      padding: 60px 20px;
-      border-radius: 10px;
+      border-radius: 12px;
+      padding: 30px 20px;
+      border: 1px solid rgba(255,255,255,0.1);
+      transition: 0.3s;
+    }
+
+    .price-card:hover {
+      transform: translateY(-5px);
+      border-color: #22c55e;
+    }
+
+    .badge {
+      background: #22c55e;
+      color: #000;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 32px;
+      margin: 15px 0;
+      color: #22c55e;
+    }
+
+    .features {
+      text-align: left;
+      margin: 20px 0;
+    }
+
+    .features li {
+      margin-bottom: 8px;
     }
 
     footer {
@@ -81,76 +120,110 @@
       font-size: 14px;
     }
 
-    footer a { color: #9ca3af; margin: 0 10px; }
+    footer a {
+      color: #9ca3af;
+      margin: 0 10px;
+      text-decoration: none;
+    }
   </style>
 </head>
 
 <body>
 
 <header>
-  <h1>Responda mais rápido. Organize melhor. Venda com mais consistência.</h1>
+  <h1>Responda mais rápido. Organize melhor. Trabalhe com mais eficiência.</h1>
   <p class="subtitle">
-    Automatize partes do seu atendimento no WhatsApp e reduza o tempo perdido com tarefas repetitivas.
+    Automatize partes do seu atendimento no WhatsApp e reduza tarefas repetitivas no dia a dia.
   </p>
   <button class="btn">Ver como funciona</button>
 </header>
 
 <section>
-  <h2 style="text-align:center;">O problema não é falta de clientes</h2>
+  <h2>O problema não é falta de clientes</h2>
   <div class="highlight">
-    A maioria dos negócios perde oportunidades por demora no atendimento, mensagens esquecidas ou falta de organização.
-    Isso não aparece nos relatórios… mas impacta diretamente nos resultados.
+    Muitas oportunidades são perdidas por atraso no atendimento ou falta de organização.
   </div>
 </section>
 
 <section>
-  <h2 style="text-align:center;">O que muda com automação</h2>
+  <h2>O que muda com automação</h2>
   <div class="grid">
-    <div class="card">
-      <h3>Tempo de resposta menor</h3>
-      <p>Mensagens automáticas ajudam a responder rapidamente sem depender de disponibilidade constante.</p>
-    </div>
-
-    <div class="card">
-      <h3>Padronização</h3>
-      <p>Evite erros e mantenha uma comunicação consistente com todos os clientes.</p>
-    </div>
-
-    <div class="card">
-      <h3>Organização</h3>
-      <p>Centralize conversas e facilite o acompanhamento de leads.</p>
-    </div>
-
-    <div class="card">
-      <h3>Escala operacional</h3>
-      <p>Atenda mais pessoas sem aumentar proporcionalmente o esforço manual.</p>
-    </div>
+    <div class="card">Respostas mais rápidas</div>
+    <div class="card">Comunicação padronizada</div>
+    <div class="card">Melhor organização</div>
+    <div class="card">Mais eficiência operacional</div>
   </div>
 </section>
 
 <section>
-  <h2 style="text-align:center;">Como funciona na prática</h2>
+  <h2>Como funciona</h2>
   <div class="grid">
-    <div class="card">Configure mensagens iniciais</div>
-    <div class="card">Defina respostas automáticas</div>
-    <div class="card">Organize contatos e fluxos</div>
-    <div class="card">Acompanhe interações</div>
+    <div class="card">Configure mensagens</div>
+    <div class="card">Automatize respostas</div>
+    <div class="card">Organize contatos</div>
+    <div class="card">Acompanhe resultados</div>
+  </div>
+</section>
+
+<!-- PLANOS -->
+<section>
+  <h2 style="text-align:center;">Escolha seu plano</h2>
+
+  <div class="pricing">
+
+    <div class="price-card">
+      <div class="badge">MAIS COMPLETO</div>
+      <div class="price">12x R$79,63</div>
+      <p>3 acessos incluídos</p>
+
+      <ul class="features">
+        <li>✔ Respostas automáticas</li>
+        <li>✔ Funis de mensagens</li>
+        <li>✔ Envio de mídia</li>
+        <li>✔ Organização de contatos</li>
+        <li>✔ Suporte prioritário</li>
+      </ul>
+
+      <button class="btn">Assinar agora</button>
+    </div>
+
+    <div class="price-card">
+      <div class="badge">SEMESTRAL</div>
+      <div class="price">6x R$86,28</div>
+      <p>2 acessos incluídos</p>
+
+      <ul class="features">
+        <li>✔ Respostas automáticas</li>
+        <li>✔ Funis de mensagens</li>
+        <li>✔ Envio de mídia</li>
+        <li>✔ Suporte padrão</li>
+      </ul>
+
+      <button class="btn">Assinar agora</button>
+    </div>
+
+    <div class="price-card">
+      <div class="badge">MENSAL</div>
+      <div class="price">R$99,90</div>
+      <p>1 acesso incluído</p>
+
+      <ul class="features">
+        <li>✔ Respostas automáticas</li>
+        <li>✔ Envio de mensagens</li>
+        <li>✔ Suporte básico</li>
+      </ul>
+
+      <button class="btn">Assinar agora</button>
+    </div>
+
   </div>
 </section>
 
 <section>
-  <div class="cta-box">
-    <h2>Comece a estruturar seu atendimento</h2>
-    <p>Sem promessas irreais. Apenas uma forma mais eficiente de trabalhar.</p>
-    <button class="btn">Acessar plataforma</button>
-  </div>
-</section>
-
-<section>
-  <h2 style="text-align:center;">Perguntas frequentes</h2>
-  <p><strong>Preciso de conhecimento técnico?</strong><br>Não. A interface é simples e guiada.</p>
-  <p><strong>Funciona sozinho?</strong><br>Após configuração inicial, parte do atendimento pode ser automatizada.</p>
-  <p><strong>Substitui atendimento humano?</strong><br>Não. Serve como suporte para otimizar o processo.</p>
+  <h2>Perguntas frequentes</h2>
+  <p><strong>Preciso instalar algo?</strong><br>Não, funciona online.</p>
+  <p><strong>É automático?</strong><br>Após configuração inicial, sim.</p>
+  <p><strong>Substitui atendimento humano?</strong><br>Não, apenas otimiza.</p>
 </section>
 
 <footer>
