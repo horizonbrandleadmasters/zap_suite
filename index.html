@@ -1,99 +1,177 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Planos</title>
+  <meta charset="UTF-8">
+  <title>Automação de Atendimento no WhatsApp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #021c1e, #0b3c3f);
-  color: #fff;
-}
+  <meta name="description" content="Automatize seu atendimento no WhatsApp e organize suas conversas com mais eficiência.">
 
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 60px 20px;
-  text-align: center;
-}
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-h1 {
-  margin-bottom: 40px;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: #1f2937;
+    }
 
-.pricing {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
+    header {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
 
-.card {
-  background: rgba(0,0,0,0.4);
-  border-radius: 12px;
-  padding: 30px 20px;
-  border: 1px solid rgba(255,255,255,0.1);
-  transition: 0.3s;
-}
+    h1 { font-size: 36px; }
 
-.card:hover {
-  transform: translateY(-5px);
-  border-color: #00e0c6;
-}
+    .subtitle {
+      font-size: 18px;
+      max-width: 600px;
+      margin: auto;
+      opacity: 0.9;
+    }
 
-.badge {
-  background: #00e0c6;
-  color: #000;
-  padding: 5px 10px;
-  font-size: 12px;
-  border-radius: 20px;
-  display: inline-block;
-  margin-bottom: 10px;
-}
+    .btn {
+      background: #22c55e;
+      color: white;
+      padding: 15px 28px;
+      border-radius: 8px;
+      border: none;
+      margin-top: 20px;
+      cursor: pointer;
+    }
 
-.price {
-  font-size: 32px;
-  margin: 15px 0;
-  color: #00e0c6;
-}
+    section {
+      padding: 70px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
 
-.features {
-  text-align: left;
-  margin: 20px 0;
-}
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+    }
 
-.features li {
-  margin-bottom: 8px;
-}
+    .card {
+      padding: 25px;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+    }
 
-.btn {
-  background: #00e0c6;
-  color: #000;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-}
+    .highlight {
+      background: #f9fafb;
+      border-left: 4px solid #22c55e;
+      padding: 20px;
+    }
 
-.btn:hover {
-  background: #00bfa6;
-}
-</style>
+    /* PRICING */
+    .pricing {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
 
+    .price-card {
+      background: #0f172a;
+      color: white;
+      border-radius: 12px;
+      padding: 30px 20px;
+      border: 1px solid rgba(255,255,255,0.1);
+      transition: 0.3s;
+    }
+
+    .price-card:hover {
+      transform: translateY(-5px);
+      border-color: #22c55e;
+    }
+
+    .badge {
+      background: #22c55e;
+      color: #000;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 32px;
+      margin: 15px 0;
+      color: #22c55e;
+    }
+
+    .features {
+      text-align: left;
+      margin: 20px 0;
+    }
+
+    .features li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      background: #111827;
+      color: #9ca3af;
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #9ca3af;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="container">
-  <h1>Escolha seu plano</h1>
+<header>
+  <h1>Responda mais rápido. Organize melhor. Trabalhe com mais eficiência.</h1>
+  <p class="subtitle">
+    Automatize partes do seu atendimento no WhatsApp e reduza tarefas repetitivas no dia a dia.
+  </p>
+  <button class="btn">Ver como funciona</button>
+</header>
+
+<section>
+  <h2>O problema não é falta de clientes</h2>
+  <div class="highlight">
+    Muitas oportunidades são perdidas por atraso no atendimento ou falta de organização.
+  </div>
+</section>
+
+<section>
+  <h2>O que muda com automação</h2>
+  <div class="grid">
+    <div class="card">Respostas mais rápidas</div>
+    <div class="card">Comunicação padronizada</div>
+    <div class="card">Melhor organização</div>
+    <div class="card">Mais eficiência operacional</div>
+  </div>
+</section>
+
+<section>
+  <h2>Como funciona</h2>
+  <div class="grid">
+    <div class="card">Configure mensagens</div>
+    <div class="card">Automatize respostas</div>
+    <div class="card">Organize contatos</div>
+    <div class="card">Acompanhe resultados</div>
+  </div>
+</section>
+
+<!-- PLANOS -->
+<section>
+  <h2 style="text-align:center;">Escolha seu plano</h2>
 
   <div class="pricing">
 
-    <!-- PLANO COMPLETO -->
-    <div class="card">
+    <div class="price-card">
       <div class="badge">MAIS COMPLETO</div>
       <div class="price">12x R$79,63</div>
       <p>3 acessos incluídos</p>
@@ -104,14 +182,12 @@ h1 {
         <li>✔ Envio de mídia</li>
         <li>✔ Organização de contatos</li>
         <li>✔ Suporte prioritário</li>
-        <li>✔ Atualizações incluídas</li>
       </ul>
 
       <button class="btn">Assinar agora</button>
     </div>
 
-    <!-- PLANO INTERMEDIÁRIO -->
-    <div class="card">
+    <div class="price-card">
       <div class="badge">SEMESTRAL</div>
       <div class="price">6x R$86,28</div>
       <p>2 acessos incluídos</p>
@@ -120,15 +196,13 @@ h1 {
         <li>✔ Respostas automáticas</li>
         <li>✔ Funis de mensagens</li>
         <li>✔ Envio de mídia</li>
-        <li>✔ Organização básica</li>
         <li>✔ Suporte padrão</li>
       </ul>
 
       <button class="btn">Assinar agora</button>
     </div>
 
-    <!-- PLANO MENSAL -->
-    <div class="card">
+    <div class="price-card">
       <div class="badge">MENSAL</div>
       <div class="price">R$99,90</div>
       <p>1 acesso incluído</p>
@@ -143,7 +217,23 @@ h1 {
     </div>
 
   </div>
-</div>
+</section>
+
+<section>
+  <h2>Perguntas frequentes</h2>
+  <p><strong>Preciso instalar algo?</strong><br>Não, funciona online.</p>
+  <p><strong>É automático?</strong><br>Após configuração inicial, sim.</p>
+  <p><strong>Substitui atendimento humano?</strong><br>Não, apenas otimiza.</p>
+</section>
+
+<footer>
+  <p>© 2026 Sua Empresa LTDA - CNPJ: 00.000.000/0001-00</p>
+  <p>
+    <a href="#">Política de Privacidade</a> |
+    <a href="#">Termos de Uso</a> |
+    <a href="mailto:contato@empresa.com">Contato</a>
+  </p>
+</footer>
 
 </body>
 </html>
