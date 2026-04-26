@@ -65,6 +65,18 @@
       border-left: 4px solid #22c55e;
       padding: 20px;
     }
+    .video-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.video-container iframe {
+  width: 100%;
+  max-width: 720px;
+  height: 405px;
+  border-radius: 10px;
+}
 
     /* PRICING */
     .pricing {
@@ -135,7 +147,15 @@
   <p class="subtitle">
     Automatize partes do seu atendimento no WhatsApp e reduza tarefas repetitivas no dia a dia.
   </p>
-  <button class="btn">Ver como funciona</button>
+  <div class="video-container">
+  <iframe 
+    src="https://www.youtube.com/embed/KxJ1_hy0ENc"
+    title="Demonstração Zap Suite"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
 </header>
   <section>
   <h2 style="text-align:center;">O que é o Zap Suite?</h2>
